@@ -4,31 +4,22 @@ version = 1
 name = "test-coverage"
 
 [[analyzers]]
-name = "terraform"
+name = "sql"
 
 [[analyzers]]
 name = "swift"
 
 [[analyzers]]
-name = "sql"
-
-[[analyzers]]
-name = "scala"
-
-[[analyzers]]
-name = "secrets"
+name = "terraform"
 
 [[analyzers]]
 name = "shell"
 
 [[analyzers]]
-name = "rust"
-
-  [analyzers.meta]
-  msrv = "stable"
+name = "secrets"
 
 [[analyzers]]
-name = "ruby"
+name = "scala"
 
 [[analyzers]]
 name = "python"
@@ -37,7 +28,16 @@ name = "python"
   runtime_version = "3.x.x"
 
 [[analyzers]]
-name = "javascript"
+name = "ruby"
+
+[[analyzers]]
+name = "rust"
+
+  [analyzers.meta]
+  msrv = "stable"
+
+[[analyzers]]
+name = "php"
 
 [[analyzers]]
 name = "kotlin"
@@ -47,7 +47,16 @@ name = "kotlin"
   language_version = "1.7"
 
 [[analyzers]]
-name = "php"
+name = "go"
+
+  [analyzers.meta]
+  import_root = "github.com/philipjonsen/Apollo-11"
+
+[[analyzers]]
+name = "docker"
+
+[[analyzers]]
+name = "javascript"
 
 [[analyzers]]
 name = "java"
@@ -56,19 +65,7 @@ name = "java"
   runtime_version = "11"
 
 [[analyzers]]
-name = "go"
-
-  [analyzers.meta]
-  import_root = "github.com/philipjonsen/Apollo-11"
-
-[[analyzers]]
 name = "cxx"
 
 [[analyzers]]
 name = "csharp"
-
-[[analyzers]]
-name = "docker"
-
-[[analyzers]]
-name = "ansible"
